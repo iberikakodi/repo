@@ -19,67 +19,6 @@
 
 <addon id="plugin.video.IberiKa"
        name="IberiKa"
-       version="0.0.2"
-       provider-name="IberiKa">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>beriKa un addon gratuito</summary>
-    <description>Tal como indica la licencia GPL, cualquier persona puede hacer el uso que considere de mi trabajo y se incluyen enlaces que proporcionan diferentes sitios Webs. No se admite ninguna compensacion economica o derivados.Espero que sea util, un saludo.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.quasar" optional="true" />
-        <import addon="script.quasar.burst" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Quasar: Torrent streaming</summary>
-        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>https://github.com/scakemyer/plugin.video.quasar</website>
-        <source>https://github.com/scakemyer/plugin.video.quasar</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
-        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.IberiKa"
-       name="IberiKa"
        version="0.0.3"
        provider-name="IberiKa">
   <requires>
@@ -107,19 +46,17 @@
   </extension>
 </addon>
 
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.requests" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
+<addon id="repository.IberiKa" name="IberiKa" version="0.0.2" provider-name="Iberikos">
+    <extension point="xbmc.addon.repository" name="IberiKa">
+        <info>https://raw.githubusercontent.com/iberikakodi/repo/master/Iberikakodi/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/iberikakodi/repo/master/Iberikakodi/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/iberikakodi/repo/master/Iberikakodi/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
+        <summary>Repositorio de IberiKa</summary>
+        <description></description>
+        <disclaimer></disclaimer>
         <platform>all</platform>
-        <summary lang="en">Proxy for f4m</summary>
-        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
     </extension>
 </addon>
 </addons>
