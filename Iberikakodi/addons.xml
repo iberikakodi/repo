@@ -19,7 +19,7 @@
 
 <addon id="plugin.video.IberiKa"
        name="IberiKa"
-       version="0.0.3"
+       version="0.0.4"
        provider-name="IberiKa">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -43,6 +43,10 @@
     <summary>beriKa un addon gratuito</summary>
     <description>Tal como indica la licencia GPL, cualquier persona puede hacer el uso que considere de mi trabajo y se incluyen enlaces que proporcionan diferentes sitios Webs. No se admite ninguna compensacion economica o derivados.Espero que sea util, un saludo.</description>
     <platform>all</platform>
+	 <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.gif</fanart>
+    </assets>
   </extension>
 </addon>
 
